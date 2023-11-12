@@ -14,9 +14,9 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.content, "html.parser")
 
-missing_citations = soup.find_all("p")
+missing_citations = soup.find_all(lambda tag: tag.name == 'p' and tag.find('a', href="/wiki/Wikipedia:Citation_needed") is not None)
 
-print(type(missing_citations))
+print(missing_citations)
 
 
 
