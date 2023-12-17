@@ -30,5 +30,7 @@ def get_citations_needed_report(url_address: str) -> str:
     return report
 
 
-print(get_citations_needed_count(url))
-print(get_citations_needed_report(url))
+if __name__ == "__main__":
+    print(get_citations_needed_count(url))
+    print(get_citations_needed_report(url))
+

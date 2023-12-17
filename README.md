@@ -8,8 +8,7 @@ This application scrapes a Wikipedia page and identifies the number of passages 
 
 ### Setup
 ```bash
-pip install beautifulsoup4
-pip install requests
+pip install -r requirements.txt
 
 ```
 #### Run Application
